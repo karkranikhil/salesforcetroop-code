@@ -1,0 +1,13 @@
+<template>
+    <div class="slds-m-bottom_large">
+        <lightning-card title="if:false demo" icon-name="custom:custom18">
+            <div class="slds-m-around_medium">
+                <button class="slds-button slds-button_success" onclick={hideHandler}>Click me to hide the text</button>
+                <template if:false={hideText}>
+                    <h3>Thanks for seeing me!!</h3>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

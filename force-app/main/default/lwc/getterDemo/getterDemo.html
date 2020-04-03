@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-bottom_large">
+    <lightning-card title="Getter Demo" icon-name="custom:custom20">
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_large">{getTitle}</h1>
+        </div>
+
+        <div class="slds-m-around_medium">
+           <button onclick={clickHandler}>ON</button>
+           <button onclick={clickHandler}>OFF</button>
+        </div>
+        <div class="slds-m-around_medium">
+            <div class={boxStatus}></div>
+        </div>
+    </lightning-card>
+    </div>
+</template>

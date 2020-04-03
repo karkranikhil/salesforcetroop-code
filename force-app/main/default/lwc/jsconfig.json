@@ -5,6 +5,33 @@
         "paths": {
             "c/helloWorld": [
                 "helloWorld/helloWorld.js"
+            ],
+            "c/newsComponent": [
+                "newsComponent/newsComponent.js"
+            ],
+            "c/dataBinding": [
+                "dataBinding/dataBinding.js"
+            ],
+            "c/templateLoopingForEach": [
+                "templateLoopingForEach/templateLoopingForEach.js"
+            ],
+            "c/templateLoopingIterator": [
+                "templateLoopingIterator/templateLoopingIterator.js"
+            ],
+            "c/templateTrueDemo": [
+                "templateTrueDemo/templateTrueDemo.js"
+            ],
+            "c/templateFalseDemo": [
+                "templateFalseDemo/templateFalseDemo.js"
+            ],
+            "c/templateToggleDemo": [
+                "templateToggleDemo/templateToggleDemo.js"
+            ],
+            "c/getterDemo": [
+                "getterDemo/getterDemo.js"
+            ],
+            "c/templateOnChangeDemo": [
+                "templateOnChangeDemo/templateOnChangeDemo.js"
             ]
         }
     },
