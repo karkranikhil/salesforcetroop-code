@@ -32,6 +32,9 @@
             ],
             "c/templateOnChangeDemo": [
                 "templateOnChangeDemo/templateOnChangeDemo.js"
+            ],
+            "c/renderMultipleDemo": [
+                "renderMultipleDemo/renderMultipleDemo.js"
             ]
         }
     },
