@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-m-bottom_medium">
+        <lightning-card title="Parent to child data communication using strings" icon-name="custom:custom14">
+            <div class="slds-m-around_medium">
+                <div>
+                    <c-alert-child-component message="Indicates a dangerous or potentially negative action">
+                    </c-alert-child-component>
+                    <c-alert-child-component class-name="success"
+                        message="Success! Indicates a successful or positive action.">
+                    </c-alert-child-component>
+                    <c-alert-child-component class-name="info"
+                        message="Info! Indicates a neutral informative change or action.">
+                    </c-alert-child-component>
+                    <c-alert-child-component class-name="warning"
+                        message="Warning! Indicates a warning that might need attention.">
+                    </c-alert-child-component>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

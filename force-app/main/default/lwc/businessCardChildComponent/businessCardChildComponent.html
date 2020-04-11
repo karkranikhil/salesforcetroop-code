@@ -1,0 +1,11 @@
+<template>
+    <template for:each={userDetails} for:item="user">
+        <div class="card" key={user.name}>
+            <img src={user.imageUrl} alt={user.name} style="width: 100%;" />
+            <h1>{user.name}</h1>
+            <p class="title">{user.title}</p>
+            <p>{user.company}</p>
+            <p><button>{user.buttontext}</button></p>
+        </div>
+    </template>
+</template>

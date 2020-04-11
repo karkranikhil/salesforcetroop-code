@@ -35,6 +35,36 @@
             ],
             "c/renderMultipleDemo": [
                 "renderMultipleDemo/renderMultipleDemo.js"
+            ],
+            "c/parentComponent": [
+                "parentComponent/parentComponent.js"
+            ],
+            "c/childComponent": [
+                "childComponent/childComponent.js"
+            ],
+            "c/alertParentComponent": [
+                "alertParentComponent/alertParentComponent.js"
+            ],
+            "c/alertChildComponent": [
+                "alertChildComponent/alertChildComponent.js"
+            ],
+            "c/businessCardParentComponent": [
+                "businessCardParentComponent/businessCardParentComponent.js"
+            ],
+            "c/businessCardChildComponent": [
+                "businessCardChildComponent/businessCardChildComponent.js"
+            ],
+            "c/progressBarParentComponent": [
+                "progressBarParentComponent/progressBarParentComponent.js"
+            ],
+            "c/progressBarChildComponent": [
+                "progressBarChildComponent/progressBarChildComponent.js"
+            ],
+            "c/barParentComponent": [
+                "barParentComponent/barParentComponent.js"
+            ],
+            "c/barChildComponent": [
+                "barChildComponent/barChildComponent.js"
             ]
         }
     },

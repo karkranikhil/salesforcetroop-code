@@ -1,0 +1,15 @@
+.myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+  
+.myBar {
+  height: 50px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+.danger{
+  background-color: #f00;
+}

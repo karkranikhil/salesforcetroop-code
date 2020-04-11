@@ -1,7 +1,7 @@
 <template>
-    <lightning-card title="Conditional rendering based on an event trigger" icon-name="custom:custom22">
+    <lightning-card title="Conditional rendering using events" icon-name="custom:custom22">
         <div class="slds-m-around_medium">
-            <lightning-input type="text" name="title" label="Enter Your Name" onkeyup={changeHandler} value={inputText}></lightning-input>
+            <lightning-input type="text" name="title" label="Enter Your Name" placeholder="Enter Troops here" onkeyup={changeHandler} value={inputText}></lightning-input>
         </div>
         <template if:true={checkText}>
             <h3>Hello Salesforce Troops</h3>
