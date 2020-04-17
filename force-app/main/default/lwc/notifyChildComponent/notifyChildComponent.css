@@ -1,0 +1,29 @@
+  
+.notificationbox {
+    background-color: #ffa000;
+    color: #fff;
+    display: flex;
+    padding: 16px 16px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 4px;
+    flex-grow: initial;
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+.child-section {
+    border: 5px solid red;
+    padding: 2rem;
+}
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #01344e;
+}
+.content {
+    display: contents;
+}

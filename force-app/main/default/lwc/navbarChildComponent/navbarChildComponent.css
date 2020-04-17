@@ -1,0 +1,26 @@
+:host {
+    border: 5px solid red;
+    padding: 2rem;
+    margin: 2rem;
+}
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #00354e;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #01344e;
+    color: white;
+}

@@ -1,0 +1,17 @@
+.notificationbox {
+    background-color: #43a047;
+    color: #fff;
+    display: flex;
+    padding: 16px 16px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 4px;
+    flex-grow: initial;
+    max-width: 80%;
+    margin-bottom: 1rem;
+}
+.parent-section {
+    border: 5px solid black;
+    padding: 2rem;
+}

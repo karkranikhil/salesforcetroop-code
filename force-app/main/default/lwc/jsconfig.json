@@ -65,6 +65,24 @@
             ],
             "c/barChildComponent": [
                 "barChildComponent/barChildComponent.js"
+            ],
+            "c/modalParentComponent": [
+                "modalParentComponent/modalParentComponent.js"
+            ],
+            "c/modalChildComponent": [
+                "modalChildComponent/modalChildComponent.js"
+            ],
+            "c/navbarParentComponent": [
+                "navbarParentComponent/navbarParentComponent.js"
+            ],
+            "c/navbarChildComponent": [
+                "navbarChildComponent/navbarChildComponent.js"
+            ],
+            "c/notifyParentComponent": [
+                "notifyParentComponent/notifyParentComponent.js"
+            ],
+            "c/notifyChildComponent": [
+                "notifyChildComponent/notifyChildComponent.js"
             ]
         }
     },

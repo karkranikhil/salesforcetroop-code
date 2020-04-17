@@ -1,0 +1,15 @@
+<template>
+<lightning-card title="Event with Bubbling" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+        <div class="parent-section" onshow={showHandler}>
+            <p>I am parent component</p>
+            <template if:true={showNotification}>
+                <div class="notificationbox">
+                    <span>Notification from child. Event bubbled successfully</span>
+                </div>
+            </template>
+            <c-notify-child-component></c-notify-child-component>
+        </div>
+
+        </div></lightning-card>
+</template>

@@ -1,0 +1,41 @@
+h3{
+    font-size: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 400px;
+    display: flex;
+    max-height: 250px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+    max-width: 400px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+    border: 5px solid black;
+}
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}
