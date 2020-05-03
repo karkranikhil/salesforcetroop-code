@@ -1,0 +1,40 @@
+.btn {
+        border: none; /* Remove borders */
+        color: white; /* Add a text color */
+        padding: 14px 28px; /* Add some padding */
+        cursor: pointer; /* Add a pointer cursor on mouse-over */
+        margin: 1rem;
+    }
+    
+    .success {
+        background-color: #4caf50;
+    } /* Green */
+    .success:hover {
+        background-color: #46a049;
+    }
+    
+    .info {
+        background-color: #2196f3;
+    } /* Blue */
+    .info:hover {
+        background: #0b7dda;
+    }
+    
+    .warning {
+        background-color: #ff9800;
+    } /* Orange */
+    .warning:hover {
+        background: #e68a00;
+    }
+    
+    .danger {
+        background-color: #f44336;
+    } /* Red */
+    .danger:hover {
+        background: #da190b;
+    }
+    
+    .child1-section {
+        border: 5px solid;
+        margin: 2rem;
+    }

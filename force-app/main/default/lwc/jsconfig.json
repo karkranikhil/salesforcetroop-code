@@ -83,6 +83,18 @@
             ],
             "c/notifyChildComponent": [
                 "notifyChildComponent/notifyChildComponent.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/pubsubParentComponent": [
+                "pubsubParentComponent/pubsubParentComponent.js"
+            ],
+            "c/pubsubChildOne": [
+                "pubsubChildOne/pubsubChildOne.js"
+            ],
+            "c/pubsubChildTwo": [
+                "pubsubChildTwo/pubsubChildTwo.js"
             ]
         }
     },
