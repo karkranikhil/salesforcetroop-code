@@ -95,6 +95,9 @@
             ],
             "c/pubsubChildTwo": [
                 "pubsubChildTwo/pubsubChildTwo.js"
+            ],
+            "c/twitterHandlerLwc": [
+                "twitterHandlerLwc/twitterHandlerLwc.js"
             ]
         }
     },
