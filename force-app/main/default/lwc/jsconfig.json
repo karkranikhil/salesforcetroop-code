@@ -98,6 +98,21 @@
             ],
             "c/twitterHandlerLwc": [
                 "twitterHandlerLwc/twitterHandlerLwc.js"
+            ],
+            "c/currentRecordAndObjectInfo": [
+                "currentRecordAndObjectInfo/currentRecordAndObjectInfo.js"
+            ],
+            "c/getListUiDemo": [
+                "getListUiDemo/getListUiDemo.js"
+            ],
+            "c/getObjectInfoDemo": [
+                "getObjectInfoDemo/getObjectInfoDemo.js"
+            ],
+            "c/getPicklistValuesDemo": [
+                "getPicklistValuesDemo/getPicklistValuesDemo.js"
+            ],
+            "c/getPicklistValuesByRecordTypeDemo": [
+                "getPicklistValuesByRecordTypeDemo/getPicklistValuesByRecordTypeDemo.js"
             ]
         }
     },

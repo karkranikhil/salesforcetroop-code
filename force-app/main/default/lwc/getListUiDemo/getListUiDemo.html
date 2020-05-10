@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="getListUi Adapter Demo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Id</th>
+                    <th>Account Name</th>
+                    <th>Type</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template if:true={accResult}>
+                    <template for:each={accResult} for:item="item">
+                        <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.fields.Name.value}</td>
+                            <td>{item.fields.Type.value}</td>
+                            <td>{item.fields.Phone.value}</td>
+                        </tr>
+                    </template>
+                </template>
+                <template if:false={accResult}>
+                    <p>List View has no data</p>
+                </template>
+            </tbody>
+        </table>
+    </lightning-card>
+</template>
