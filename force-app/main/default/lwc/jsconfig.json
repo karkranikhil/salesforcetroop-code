@@ -113,6 +113,9 @@
             ],
             "c/getPicklistValuesByRecordTypeDemo": [
                 "getPicklistValuesByRecordTypeDemo/getPicklistValuesByRecordTypeDemo.js"
+            ],
+            "c/createRecordDemo": [
+                "createRecordDemo/createRecordDemo.js"
             ]
         }
     },
