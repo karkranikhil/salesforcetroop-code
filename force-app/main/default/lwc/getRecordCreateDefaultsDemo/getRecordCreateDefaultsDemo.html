@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="GetRecordCreateDefaults Adapter Demo" icon-name="standard:user">
+            <table>
+                <thead>
+                    <tr>
+                        <template for:each={tableHeader} for:item="header">
+                            <th key={header}>{header}</th>
+                        </template>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={tableBody} for:item="body">
+                        <tr key={body.apiName}>
+                            <td>{body.apiName}</td>
+                            <td>{body.dataType}</td>
+                            <td>{body.label}</td>
+                            <td>{body.length}</td>
+                            <td>{body.required}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </lightning-card>
+    </div>
+</template>
