@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-m-bottom_medium">
+        <lightning-card title="getRecord Demo" icon-name="standard:user">
+            <div class="slds-m-around_medium">
+                <p>Account Name : {result.Name}</p>
+                <p>Industry : {result.Industry}</p>
+                <p>Phone : {result.Phone}</p>
+                <p>Annual Revenue: {result.AnnualRevenue}</p>
+            </div>
+        </lightning-card>
+    </div>
+    <div class="slds-m-bottom_medium">
+        <lightning-card title="getRecord Demo with getFieldValue and getFieldDisplayValue adapter" icon-name="standard:user">
+            <div class="slds-m-around_medium">
+                <p>Account Name : {name}</p>
+                <p>Industry : {industry}</p>
+                <p>Phone : {phone}</p>
+                <p>Annual Revenue: {revenue}</p>
+                <p>owner: {owner}</p>
+            </div>
+        </lightning-card>
+    </div>
+</template>

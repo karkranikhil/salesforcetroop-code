@@ -119,6 +119,9 @@
             ],
             "c/getRecordCreateDefaultsDemo": [
                 "getRecordCreateDefaultsDemo/getRecordCreateDefaultsDemo.js"
+            ],
+            "c/getRecordDemo": [
+                "getRecordDemo/getRecordDemo.js"
             ]
         }
     },
