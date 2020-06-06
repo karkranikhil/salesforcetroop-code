@@ -122,6 +122,9 @@
             ],
             "c/getRecordDemo": [
                 "getRecordDemo/getRecordDemo.js"
+            ],
+            "c/lMCDemoLwc": [
+                "lMCDemoLwc/lMCDemoLwc.js"
             ]
         }
     },

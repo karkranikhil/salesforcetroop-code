@@ -41,4 +41,3 @@ export default class PubsubChildTwo extends LightningElement {
         this.accordionList = [...updatedList]
     }
 }
-https://youtu.be/yyHVT5MFnTA

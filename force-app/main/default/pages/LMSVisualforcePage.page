@@ -1,0 +1,49 @@
+<apex:page lightningStylesheets="true">
+    <apex:slds/>
+
+    <div class="slds-scope">
+        <div class="slds-p-around_small">
+            <p>Enter Publish Message</p>
+            <input type="text" class="slds-input sldsx-p-bottom_small" id="theMessage"/>
+            <div class="slds-p-bottom_small slds-p-top_small">
+                <button class="slds-button slds-button_neutral" onclick="publishMessage()">Publish your Message</button>
+                <button class="slds-button slds-button_neutral" onclick="subscribeMessage()">Subscribe</button>
+                <button class="slds-button slds-button_neutral" onclick="unsubscribeMessage()">Unsubscribe</button>
+            </div>
+            <p>Message Recieved</p>
+            <div id="recievedMessage"></div>
+        </div>
+    </div>
+    <script>
+    let SAMPLEMC = "{!$MessageChannel.SampleMessageChannel__c}"
+    let subscriptionToMC
+    function publishMessage(){
+        let data = document.getElementById("theMessage").value
+        const payload={
+            lmsData:{
+                value:data
+            }
+        }
+        sforce.one.publish(SAMPLEMC, payload)
+    }
+
+    function subscribeMessage(){
+        if(!subscriptionToMC){
+            subscriptionToMC = sforce.one.subscribe(SAMPLEMC, msgHandler, {scope:"APPLICATION"})
+        }
+    }
+
+    function unsubscribeMessage(){
+        if(subscriptionToMC){
+            sforce.one.unsubscribe(subscriptionToMC)
+            subscriptionToMC = null
+        }
+    }
+
+    function msgHandler(message){
+        let recievedMessage = document.getElementById("recievedMessage")
+        recievedMessage.innerHTML = message && message.lmsData ? message.lmsData.value : "No Payload sent"
+    }
+    
+    </script>
+</apex:page>
