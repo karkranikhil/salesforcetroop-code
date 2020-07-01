@@ -1,0 +1,46 @@
+<template>
+    <!--First card-->
+    <div class="slds-p-around_medium">
+        <lightning-card title="Wire a property in LWC">
+            <div class="slds-p-around_medium">
+                <template for:each={wireAccounts.data} for:item="acc">
+                    <div class="slds-item" key={acc.Id}>
+                        <strong>{acc.Name} </strong>
+                        <lightning-formatted-phone value={acc.Phone}></lightning-formatted-phone>
+                    </div>
+                </template>
+                <div> From getSObjectValue - <strong>{name}</strong></div>
+            </div>
+        </lightning-card>
+    </div>
+    <!--second card-->
+    <div class="slds-p-around_medium">
+        <lightning-card title="Wire a function in LWC">
+            <div class="slds-p-around_medium">
+                <template for:each={results} for:item="result">
+                    <div class="slds-item" key={result.Id}>
+                        <strong>{result.Name} </strong>
+
+                        <lightning-formatted-number value={result.AnnualRevenue}
+                        format-style="currency"
+                        currency-code="USD"
+                        currency-display-as="code"></lightning-formatted-number>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+    <!--Third card-->
+    <div class="slds-p-around_medium">
+        <lightning-card title="Call an Apex Method Imperatively">
+            <div class="slds-p-around_medium">
+                <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+                <template if:true={contacts}>
+                    <template for:each={contacts} for:item="contact">
+                        <p key={contact.Id}>{contact.Name}</p>
+                    </template>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

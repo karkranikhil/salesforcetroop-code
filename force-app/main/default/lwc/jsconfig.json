@@ -125,6 +125,12 @@
             ],
             "c/lMCDemoLwc": [
                 "lMCDemoLwc/lMCDemoLwc.js"
+            ],
+            "c/testLwc": [
+                "testLwc/testLwc.js"
+            ],
+            "c/apexDemoLwc": [
+                "apexDemoLwc/apexDemoLwc.js"
             ]
         }
     },
