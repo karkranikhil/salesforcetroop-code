@@ -131,6 +131,9 @@
             ],
             "c/apexDemoLwc": [
                 "apexDemoLwc/apexDemoLwc.js"
+            ],
+            "c/refreshDemoLwc": [
+                "refreshDemoLwc/refreshDemoLwc.js"
             ]
         }
     },
