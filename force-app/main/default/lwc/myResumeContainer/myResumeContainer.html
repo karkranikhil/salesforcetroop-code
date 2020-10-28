@@ -1,0 +1,31 @@
+<template>
+    <div class="wrapper">
+        <div class="slds-var-p-around_medium header_color">
+            <c-my-resume-header
+            social-details={SOCIAL_LINKS}
+            user-details={RESUME_DATA.USER_DETAILS}
+            profile-image={PROFILE_IMAGE}
+            ></c-my-resume-header>
+        </div>
+        <div class="slds-var-p-around_medium">
+            <c-my-resume-summary details={RESUME_DATA.CAREER_SUMMARY}></c-my-resume-summary>
+        </div>
+        <div class="slds-var-p-around_medium">
+           <div class="slds-grid slds-wrap">
+               <div class="slds-col slds-size_1-of-1 slds-medium-size_9-of-12 slds-large-size_9-of-12">
+                   <c-my-resume-experience details={RESUME_DATA.EXPERIENCE_DATA}></c-my-resume-experience>
+               </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                    <c-my-resume-skills details={RESUME_DATA.SKILLS_DATA}></c-my-resume-skills>
+                   <c-my-resume-extra details={RESUME_DATA.EDUCATION_DATA}></c-my-resume-extra>
+                    <c-my-resume-extra details={RESUME_DATA.AWARDS_DATA}></c-my-resume-extra>
+                    <c-my-resume-extra details={RESUME_DATA.CERTIFICATION_DATA}></c-my-resume-extra>
+                    <c-my-resume-extra details={RESUME_DATA.LANGUAGES_DATA}></c-my-resume-extra>
+                    <section class="slds-var-p-left_medium">
+                    <c-my-resume-tags tags-list={RESUME_DATA.INTERESTS_DATA.LIST} heading={RESUME_DATA.INTERESTS_DATA.HEADING} type="MAIN"></c-my-resume-tags>
+                    </section>
+                </div>
+           </div>
+        </div>
+    </div>
+</template>

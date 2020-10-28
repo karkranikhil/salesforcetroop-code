@@ -1,0 +1,23 @@
+<template>
+    <section class="slds-var-p-left_medium">
+        <h2 class="slds-text-title_caps main_color section_heading slds-var-m-bottom_small slds-var-m-top_large marginBottomZero slds-is-relative slds-var-p-bottom_medium">
+            {educationDetails.HEADING}
+        </h2>
+        <div>
+            <ul>
+                <template if:true={educationDetails.EDUCATION_LIST}>
+                    <template for:each={educationDetails.EDUCATION_LIST} for:item="list">
+                        <li key={list.DURATION} class="slds-var-m-bottom_medium">
+                            <div class="slds-grid">
+                                <img src={educationIcon} alt="education icon" width="20px" class="slds-var-m-right_small" />
+                                <div class="fontWeight700 font16">{list.DEGREE}</div>
+                            </div>
+                            <div class="uni_name">{list.UNIVERSITY_NAME}</div>
+                            <div class="duration">{list.DURATION}</div>
+                        </li>
+                    </template>
+                </template>
+            </ul>
+        </div>
+    </section>
+</template>

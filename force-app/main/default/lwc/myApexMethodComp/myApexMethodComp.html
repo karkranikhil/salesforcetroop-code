@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Apex imperative testing" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="load accounts" onclick={loadAccounts}></lightning-button>
+        </div>
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="account">
+                <p key={account.Id} class="accountName">{account.Name}</p>
+            </template>
+        </template>
+        <template if:true={error}>
+            <p class="error">{error}</p>
+        </template>
+    </lightning-card>
+</template>

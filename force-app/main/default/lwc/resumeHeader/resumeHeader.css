@@ -1,0 +1,27 @@
+.large_font{
+    font-size: 2.25rem;
+}
+.medium_font{
+    font-size: 1.5rem;
+}
+.m-auto{
+    margin:auto;
+}
+
+.profile_pic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.link{
+   color: #6c7a9c; 
+}
+.name_color{
+    color:#6c7a9c;
+}
+
+@media only screen and (max-width: 600px){
+    .mobile_text_center {
+        text-align:center;
+    }
+}

@@ -26,6 +26,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>labels</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>

@@ -1,0 +1,43 @@
+<template>
+    <header>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12 mobile_text_center">
+                <img src={profileImage} alt="profile pic" class="profile_pic"/>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 m-auto">
+                <div>
+                    <div class="nameHeading mobile_text_center">{userDetails.NAME}</div>
+                    <div class="roleHeading mobile_text_center">{userDetails.ROLE}</div>
+                </div>
+                <ul class="small_font">
+                    <li class="slds-var-m-bottom_small">
+                        <a href={emailLink} class="link">
+                            <lightning-icon icon-name="utility:email" alternative-text="email!" size="x-small"
+                                title="email" class="slds-var-m-right_small"></lightning-icon>
+                                {userDetails.EMAIL}
+                        </a>
+                    </li>
+                    <li class="slds-var-m-bottom_small">
+                        <a href={phoneLink} class="link">
+                            <lightning-icon icon-name="utility:dialing" alternative-text="dialing!" size="x-small" title="dialing"
+                                class="slds-var-m-right_small"></lightning-icon>
+                            {userDetails.PHONE}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12 m-auto">
+                <ul class="small_font">
+                    <template for:each={socialDetails} for:item="item">
+                        <li class="slds-var-m-bottom_small" key={item.type}>
+                            <a href={item.link} target="_blank" class="link">
+                             <img src={item.icon} alt={item.type} width="20px" class="slds-var-m-right_small" />
+                            <span>{item.label}</span>
+                            </a>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </header>
+</template>

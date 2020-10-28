@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Navigate to components" icon-name="custom:custom96">
+        <div>{PageRef}</div>
+        <lightning-button label="Go to Aura" class="slds-var-m-around_medium"
+            onclick={handleAuraNavigate}>
+        </lightning-button>
+
+        <lightning-button label="Go to VFpage" class="slds-var-m-around_medium" onclick={navigateToVfPage}>
+        </lightning-button>
+
+        <lightning-button label="Go to LWC" class="slds-var-m-around_medium" onclick={handlerLwcNavigate}>
+        </lightning-button>
+    </lightning-card>
+</template>

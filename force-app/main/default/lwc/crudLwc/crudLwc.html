@@ -1,0 +1,27 @@
+<template>
+    <button onclick={trigger}>trigger</button>
+      <lightning-card title="HelloBinding" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+                <p>Account, {accountName}!</p>
+            <lightning-input
+                label="Name"
+                value={accountName}
+                onchange={handleChange}
+            ></lightning-input>
+            <lightning-button variant="brand" 
+                                label="Save" 
+                                title="Save" 
+                                icon-name="utility:save" 
+                                onclick={saveAccountRec}
+                                class="slds-m-left_medium">
+                    </lightning-button>
+            <lightning-button variant="brand" 
+                    label="Delete" 
+                    title="Delete" 
+                    icon-name="utility:delete" 
+                    onclick={deleteAccount}
+                    class="slds-m-left_medium">
+        </lightning-button>
+</div>
+    </lightning-card>
+</template>

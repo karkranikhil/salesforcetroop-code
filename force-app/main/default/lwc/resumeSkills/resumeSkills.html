@@ -1,0 +1,36 @@
+<template>
+    <section class="slds-var-p-left_medium">
+        <h2 class="section_heading slds-var-p-bottom_medium slds-var-m-bottom_medium slds-is-relative slds-text-title_caps">{skillDetails.HEADING} </h2>
+        <div>
+            <template if:true={skillDetails.SKILLS}>
+                <template for:each={skillDetails.SKILLS} for:item="skill">
+                    <div key={skill.HEADING} class="slds-var-m-top_medium">
+                        <h3 class="font16 main_color fontWeight700 marginBottomZero">{skill.HEADING}</h3>
+                        <ul>
+                            <template if:true={skill.SKILLS_LIST}>
+                                <template for:each={skill.SKILLS_LIST} for:item="skillList">
+                                    <li key={skillList.NAME} class="slds-var-m-top_x-small">
+                                        <div class="skill_color">{skillList.NAME}</div>
+                                        <c-resume-progress-bar progress-value={skillList.LEVEL}></c-resume-progress-bar>
+                                    </li>
+                                </template>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+            </template>
+            <div>
+                <template if:true={skillDetails.OTHERS_SKILLS}>
+                    <h3 class="fontWeight700 font16 main_color slds-var-m-bottom_small slds-var-m-top_medium marginBottomZero"> Others</h3>
+                        <ul class="others_box">
+                            <template for:each={skillDetails.OTHERS_SKILLS} for:item="otherskill">
+                                <li key={otherskill} class="slds-var-m-top_x-small">
+                                    <span class="other_badge slds-show_inline-block slds-text-align_center slds-line-height_reset other_badge inline_block slds-var-m-right_xx-small">{otherskill}</span>
+                                </li>
+                            </template>
+                        </ul>
+                </template>
+            </div>
+        </div>
+    </section>
+</template>

@@ -1,0 +1,29 @@
+<template>
+    <section class="slds-var-p-left_medium">
+        <h2 class="slds-text-title_caps main_color section_heading slds-var-m-bottom_small slds-var-m-top_large marginBottomZero slds-is-relative slds-var-p-bottom_medium ">
+            {details.HEADING}</h2>
+
+        <div>
+            <ul>
+                <template if:true={details.LIST}>
+                    <template for:each={details.LIST} for:item="item">
+                        <li key={item.NAME} class={className}>
+                            <div class="slds-grid">
+                                <template if:true={isLanguages}>
+                                    <div class='fontWeight700 font16'>{item.NAME}
+                                        <span class="subtext">({item.LEVEL})</span>
+                                    </div>
+                                </template>
+                                <template if:false={isLanguages}>
+                                    <div class='slds-var-m-top_x-small'>
+                                        <span class="other_badge slds-show_inline-block slds-text-align_center slds-line-height_reset inline_block slds-var-m-right_xx-small">{item.NAME}</span>
+                                    </div>
+                                </template>
+                            </div>
+                        </li>
+                    </template>
+                </template>
+            </ul>
+        </div>
+    </section>
+</template>

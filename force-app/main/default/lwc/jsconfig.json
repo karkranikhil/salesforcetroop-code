@@ -134,6 +134,30 @@
             ],
             "c/refreshDemoLwc": [
                 "refreshDemoLwc/refreshDemoLwc.js"
+            ],
+            "c/testingRecordId": [
+                "testingRecordId/testingRecordId.js"
+            ],
+            "c/fileUploaderCompLwc": [
+                "fileUploaderCompLwc/fileUploaderCompLwc.js"
+            ],
+            "c/dragAndDropLwc": [
+                "dragAndDropLwc/dragAndDropLwc.js"
+            ],
+            "c/dragAndDropList": [
+                "dragAndDropList/dragAndDropList.js"
+            ],
+            "c/dragAndDropCard": [
+                "dragAndDropCard/dragAndDropCard.js"
+            ],
+            "c/myFirstComponent": [
+                "myFirstComponent/myFirstComponent.js"
+            ],
+            "c/myEventTesting": [
+                "myEventTesting/myEventTesting.js"
+            ],
+            "c/testChildLwc": [
+                "testChildLwc/testChildLwc.js"
             ]
         }
     },
@@ -144,6 +168,11 @@
     "typeAcquisition": {
         "include": [
             "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
         ]
     }
 }

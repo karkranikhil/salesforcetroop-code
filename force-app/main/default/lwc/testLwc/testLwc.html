@@ -1,47 +1,85 @@
 <template>
 <div class="slds-p-around_medium">
-    <lightning-card title="Wire a property in LWC">
-        <div class="slds-p-around_medium">
-            <template if:true={wireAccounts.data}>
-                    <template for:each={wireAccounts.data} for:item="acc">
-                        <div class="slds-item" key={acc.Id}>
-                            <strong>{acc.Name}</strong> - 
-                            <lightning-formatted-phone value={acc.Phone}></lightning-formatted-phone>
-                        </div>
-                        
-                    </template>
-                    <div>From getSObjectValue - <strong>{name}</strong></div>
-            </template>
-            </div>
+    <lightning-card title="Navigation to standard namedPage" icon-name="custom:custom96">
+        <lightning-button label="Go to Chatter Home" class="slds-var-m-around_medium" onclick={navigateToChatter}>
+        </lightning-button>
+        <lightning-button label="Go to Home Page" class="slds-var-m-around_medium" onclick={navigateToHome}>
+        </lightning-button>
+    </lightning-card>
+</div>
+
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to standard objectPage" icon-name="custom:custom96">
+        <lightning-button label="Files Home" class="slds-var-m-around_medium" onclick={navigateToFilesHome}>
+        </lightning-button>
+        <lightning-button label="New Contact" class="slds-var-m-around_medium" onclick={navigateToNewContactPage}>
+        </lightning-button>
+        <lightning-button name="new-with-defaults" label=" New Contact with Defaults" class="slds-var-m-around_medium"
+            onclick={navigateToNewContactWithDefaults}></lightning-button>
+            <lightning-button label="Recent Contacts list" class="slds-var-m-around_medium" onclick={navigateToList}>
+            </lightning-button>
+    </lightning-card>
+</div>
+
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to standard navItemPage" icon-name="custom:custom96">
+        <lightning-button label="Go to navItemPage" class="slds-var-m-around_medium" onclick={navigateToTab}>
+        </lightning-button>
+    </lightning-card>
+</div>
+
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to standard recordPage" icon-name="custom:custom96">
+        <template if:true={contact.data}>
+            <lightning-button label="Go to Contact Record" onclick={navigateToContact} class="slds-var-m-right_x-small">
+            </lightning-button>
+            <lightning-button label="Go to Edit Contact" onclick={navigateToEdit}></lightning-button>
+        </template>
+        <template if:true={contact.error}>
+            <div style="color:red;">{contact.error}</div>
+        </template>
     </lightning-card>
 </div>
 <div class="slds-p-around_medium">
-    <lightning-card title="Wire a function in LWC">
-        <div class="slds-p-around_medium">
-            <template if:true={results}>
-                    <template for:each={results} for:item="result">
-                        <div class="slds-item" key={result.Id}>
-                            <strong>{result.Name}</strong> - 
-                            <lightning-formatted-number value={result.AnnualRevenue} format-style="currency" currency-code="USD" currency-display-as="code">
-                            </lightning-formatted-number>
-                        </div>
-                    </template>
-            </template>
-        </div>
+    <lightning-card title="Navigation to custom recordPage" icon-name="custom:custom96">
+        <lightning-button label="Go to custom record page" onclick={navigateToCustomRecordPage}></lightning-button>
     </lightning-card>
-    </div>
-    <div class="slds-p-around_medium">
-        <lightning-card title="Call an Apex Method Imperatively">
-            <div class="slds-m-around_medium">
-                <p class="slds-m-bottom_small">
-                    <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
-                </p>
-                <template if:true={contacts}>
-                    <template for:each={contacts} for:item="contact">
-                        <p key={contact.Id}>{contact.Name}</p>
-                    </template>
-                </template>
-            </div>
-        </lightning-card>
-    </div>
+</div>
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to standard recordRelationshipPage" icon-name="custom:custom96">
+        <template if:true={account.data}>
+            <lightning-button label="Go to Related Contacts list" onclick={navigateToRelatedList}></lightning-button>
+        </template>
+        <template if:true={account.error}>
+            <div style="color:red;">{contact.error}</div>
+        </template>
+    </lightning-card>
+</div>
+
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to standard navigateToWebPage" icon-name="custom:custom96">
+        <lightning-button name="new-with-defaults" label="Go to Web Page" class="slds-var-m-around_medium"
+            onclick={navigateToWebPage}></lightning-button>
+    </lightning-card>
+</div>
+
+
+
+<div class="slds-p-around_medium">
+    <lightning-card title="Navigation to AURA, LWC and VF page" icon-name="custom:custom96">
+        <lightning-button name="new-with-defaults" label="Navigate to Aura component" class="slds-var-m-around_medium"
+            onclick={handleAuraNavigate}></lightning-button>
+
+        <lightning-button name="new-with-defaults" label="Navigate to LWC component" class="slds-var-m-around_medium"
+            onclick={handleLwcNavigate}></lightning-button>
+            <lightning-button name="new-with-defaults" label="Navigate to Visual force page" class="slds-m-around_medium"
+                onclick={navigateToVFPage}></lightning-button>
+    </lightning-card>
+
+    
+</div>
+
+
+
+
 </template>

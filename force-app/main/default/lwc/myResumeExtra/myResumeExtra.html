@@ -1,0 +1,33 @@
+<template>
+    <section class="slds-var-p-left_medium">
+        <h2 class="section_heading">{details.HEADING}</h2>
+        <div>
+            <ul>
+                <template for:each={details.LIST} for:item="list">
+                    <li key={list.NAME} class="slds-var-m-bottom_medium">
+                        <div class="slds-grid">
+                            <template if:true={details.ICON}>
+                                <img src={details.ICON} alt="icon" width="20px" class="slds-var-m-right_xx-small" />
+                            </template>
+                            <div class="fontWeight700 font14">{list.NAME}
+                                <template if:true={list.LEVEL}>
+                                    <span class="subText font14"> ({list.LEVEL})</span>
+                                </template>
+
+                            </div>
+                        </div>
+                        <template if:true={list.UNIVERSITY_NAME}>
+                            <div class="uni_name">{list.UNIVERSITY_NAME}</div>
+                        </template>
+                        <template if:true={list.DURATION}>
+                            <div class="subText">{list.DURATION}</div>
+                        </template>
+                        <template if:true={list.DESCRIPTION}>
+                            <div class="subText">{list.DESCRIPTION}</div>
+                        </template>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </section>
+</template>

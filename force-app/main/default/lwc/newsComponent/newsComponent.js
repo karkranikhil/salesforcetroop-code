@@ -7,12 +7,15 @@ export default class NewsComponent extends LightningElement {
     get modalClass(){
         return `slds-modal ${this.isModalOpen ? "slds-fade-in-open" :""}`
     }
+
+    /***modalBackdropClass method set the class based on the isModalOpen Value ***/
     get modalBackdropClass(){
         return this.isModalOpen ? "slds-backdrop slds-backdrop_open" : "slds-backdrop"
     }
     connectedCallback(){
         this.fetchNews();
     }
+/****fetchNews method gets called on page load, and within this, we are calling the retriveNews apex method using apex imperative approach****/
     fetchNews(){
         retriveNews().then(response=>{
             console.log(response);
@@ -21,6 +24,7 @@ export default class NewsComponent extends LightningElement {
             console.error(error);
         })
     }
+/****formatNewsData method structuring the response we are getting from the apex method by adding the id, name and date  ****/
     formatNewsData(res){
         this.result = res.map((item, index)=>{
             let id = `new_${index+1}`;
@@ -30,6 +34,7 @@ export default class NewsComponent extends LightningElement {
         })
 
     }
+    /****showModal method fetch the id of the news card that has been clicked and filter particular news based on the id ****/
     showModal(event){
         let id = event.target.dataset.item;
         this.result.forEach(item=>{
@@ -39,6 +44,7 @@ export default class NewsComponent extends LightningElement {
         })
         this.isModalOpen = true;
     }
+    /****closeModal method close the modal ****/
     closeModal(){
         this.isModalOpen = false;
     }

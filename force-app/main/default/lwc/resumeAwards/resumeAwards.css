@@ -1,0 +1,35 @@
+.section_heading{
+    font-size: 1.25rem;
+    color: #1a3179;
+}
+.fontWeight700{
+    font-weight: 700;
+}
+.section_heading:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #8d9aad;
+}
+.font16{
+    font-size: 1rem;
+}
+.font12{
+    font-size: 12px;
+}
+
+.main_color{
+    color: #1a3179;
+    font-weight: 600;
+}
+.duration{
+    color: #aab4c3;
+    font-size: .875rem;
+}
+.uni_name{
+    font-size: .875rem;
+    color: #58677c;
+}

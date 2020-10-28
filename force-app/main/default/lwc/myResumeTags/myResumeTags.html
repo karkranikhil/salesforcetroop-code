@@ -1,0 +1,6 @@
+<template>
+    <h3 class={isHeading}>{heading}</h3>
+    <template for:each={tagsList} for:item="tag">
+        <div key={tag} class="tags">{tag}</div>
+    </template>
+</template>

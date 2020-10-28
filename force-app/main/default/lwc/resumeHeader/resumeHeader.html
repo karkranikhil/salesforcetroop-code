@@ -1,0 +1,42 @@
+<template>
+    <header>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_3-of-12 mobile_text_center">
+               <img src={profileImage} alt="profile pic" class="profile_pic">
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_6-of-12 m-auto">
+                <div class="large_font slds-text-title_caps lds-var-m-bottom_small name_color mobile_text_center">
+                    {userDetails.NAME}
+                </div>
+                <div class="slds-var-m-bottom_small medium_font mobile_text_center">{userDetails.ROLE}</div>
+                <ul>
+                    <li class="slds-var-m-bottom_small">
+                        <a href={emailLink} class="link">
+                            <lightning-icon icon-name="utility:email" alternative-text="email!" size="x-small" title="email" class="slds-var-m-right_small"></lightning-icon>
+                            {userDetails.EMAIL}
+                        </a>
+                    </li>
+                    <li class="slds-var-m-bottom_small">
+                        <a href={phoneLink} class="link">
+                            <lightning-icon icon-name="utility:dialing" alternative-text="dialing!" size="x-small" title="dialing" class="slds-var-m-right_small slds-var-p-bottom_small"></lightning-icon>
+                            {userDetails.PHONE}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_3-of-12 m-auto">
+                <ul>
+                    <template for:each={socialDetails} for:item="item">
+                        <li class="slds-var-m-bottom_small" key={item.type}>
+                            <a href={item.link} target="_blank" class="link">
+                                <img src={item.icon} alt={item.type} width="20px" class="slds-var-m-right_small"/>
+                                <span>{item.label}</span>
+                            </a>
+                        </li>
+                    </template>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+</template>

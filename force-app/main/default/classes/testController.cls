@@ -15,4 +15,22 @@ public with sharing class testController {
             SELECT Id, Name FROM Contact
         ];
     }
+    @AuraEnabled(cacheable=true)
+    public static Account getSingleAccount() {
+        return [
+            SELECT Id, Name, Phone, Type
+            FROM Account
+            WITH SECURITY_ENFORCED
+            LIMIT 1
+        ];
+    }
+     @AuraEnabled(cacheable=true)
+    public static Contact getSingleContact() {
+        return [
+            SELECT Id, Name, Title, Phone, Email
+            FROM Contact
+            WITH SECURITY_ENFORCED
+            LIMIT 1
+        ];
+    }
 }

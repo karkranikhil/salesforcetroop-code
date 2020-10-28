@@ -1,0 +1,69 @@
+.font16{
+    font-size: 1rem;
+}
+
+.section_heading{
+    font-size: 1.25rem;
+    color: #1a3179;
+}
+.section_heading:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: #8d9aad;
+}
+.workExp_content:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: #8d9aad;
+    left: 6px;
+    top: 4px;
+    position: absolute;
+}
+.workExp_individual{
+    color: #686f79;
+    font-size: 16px;
+}
+.workExp_individual:before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border: 4px solid #8d9aad;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.description_box{
+    list-style: disc;
+}
+.tech_tile{
+   background: #1a3179;
+    color: white;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem;
+}
+.main_color{
+    color: #1a3179;
+}
+.fontWeight700{
+    font-weight: 600;
+}
+.tile_box{
+    display: flex;
+    flex-wrap: wrap;
+}

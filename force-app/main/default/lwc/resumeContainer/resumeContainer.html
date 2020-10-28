@@ -1,0 +1,29 @@
+<template>
+    <div class="wrapper">
+        <div class="slds-var-p-around_medium header_color">
+            <c-resume-header social-details={RESUME_DATA.SOCIAL_LINKS} user-details={RESUME_DATA.USER_DETAILS} profile-image={profileImage}></c-resume-header>
+        </div>
+        <div>
+            <div class="slds-var-p-around_medium">
+               <c-resume-summary summary-details={RESUME_DATA.CAREER_SUMMARY}></c-resume-summary>
+            </div>
+        </div>
+        <div>
+            <div class="slds-var-p-around_medium">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_9-of-12 slds-large-size_9-of-12">
+                       <c-resume-work-experience work-experience-details={RESUME_DATA.WORKEXPERIENCE_DATA}></c-resume-work-experience>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-12 slds-large-size_3-of-12">
+                        <c-resume-skills skill-details={RESUME_DATA.SKILLS_DATA}></c-resume-skills>
+                        <c-resume-education education-details={RESUME_DATA.EDUCATION_DATA}></c-resume-education>
+                        <c-resume-awards details={RESUME_DATA.AWARDS_DATA}></c-resume-awards>
+                        <c-resume-awards details={RESUME_DATA.CERTIFICATION_DATA}></c-resume-awards>
+                        <c-resume-lang-and-interest details={RESUME_DATA.LANGUAGES_DATA}></c-resume-lang-and-interest>
+                        <c-resume-lang-and-interest details={RESUME_DATA.INTERESTS_DATA}></c-resume-lang-and-interest>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

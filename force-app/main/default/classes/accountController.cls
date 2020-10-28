@@ -13,4 +13,11 @@ public with sharing class accountController {
     public static List<Contact> getContactList(){
         return [SELECT Id, Name FROM Contact];
     }
+
+     @AuraEnabled(cacheable=true)
+    public static List<Contact> testHandler(Contact newRecord, list<Contact> newRecordList){
+        system.debug('offeridstr='+newRecord);
+        system.debug('productdetails='+newRecordList);
+         return [SELECT Id, Name FROM Contact];
+    }
 }

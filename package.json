@@ -1,0 +1,28 @@
+{
+  "name": "HelloWorld",
+  "version": "1.0.0",
+  "description": "This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@salesforce/sfdx-lwc-jest": "^0.9.2"
+  },
+  "scripts": {
+    "test":"npm run test:unit",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karkranikhil/salesforcetroop-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karkranikhil/salesforcetroop-code/issues"
+  },
+  "homepage": "https://github.com/karkranikhil/salesforcetroop-code#readme"
+}
